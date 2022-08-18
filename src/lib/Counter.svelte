@@ -1,13 +1,16 @@
 <script>
-  let count = 0
+  let count = 0;
   const increment = () => {
-    count += 1
-  }
+    count += 1;
+  };
+  const decrement = () => {
+    count -= 1;
+  };
 </script>
 
-<button on:click={increment}>
-  Clicks: {count}
-</button>
+<button on:click={increment}> Increace </button>
+<p>{count}</p>
+<button on:click={decrement}>Decrease</button>
 
 <style>
   button {
